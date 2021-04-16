@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    padding-top: 30px;
+    background-color: #24282f;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+header ul{
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    margin-left: 50px;
+}
+header ul li a{
+    font-size: 11px;
+    line-height: 11px;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+}
+header ul li:after{
+    display: block;
+    content: "";
+    background-color: transparent;
+    height: 2px;
+    width: 1%;
+    margin-top: 33px;
+    transition: 0.3s;
+}
+header ul li:hover:after, header ul li.active:after{
+    background-color: #b5a263;
+    width: 100%;
+}
+
+
